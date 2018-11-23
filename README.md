@@ -1,10 +1,11 @@
-# Expressive Skeleton and Installer
+# Expressive OAuth2 Server Skeleton and Installer
 
 [![Build Status](https://secure.travis-ci.org/zendframework/zend-expressive-skeleton.svg?branch=master)](https://secure.travis-ci.org/zendframework/zend-expressive-skeleton)
 [![Coverage Status](https://coveralls.io/repos/github/zendframework/zend-expressive-skeleton/badge.svg?branch=master)](https://coveralls.io/github/zendframework/zend-expressive-skeleton?branch=master)
 
-*Begin developing PSR-15 middleware applications in seconds!*
+*Begin developing OAuth2 enabled PSR-15 middleware applications in seconds!*
 
+[ezauth2-server-skeleton](https://github.com/jstormes/ezauth2-server-skeleton) builds on
 [zend-expressive](https://github.com/zendframework/zend-expressive) builds on
 [zend-stratigility](https://github.com/zendframework/zend-stratigility) to
 provide a minimalist PSR-15 middleware framework for PHP with routing, DI
@@ -24,20 +25,20 @@ removed.
 
 ## Getting Started
 
-Start your new Expressive project with composer:
+Start your new Expressive OAuth2 Server project with composer:
 
 ```bash
-$ composer create-project zendframework/zend-expressive-skeleton <project-path>
+$ composer create-project jstormes/ezauth2-server-skeleton <project-path>
 ```
 
 After choosing and installing the packages you want, go to the
-`<project-path>` and start PHP's built-in web server to verify installation:
+`<project-path>` and start Swooles built-in web server to verify installation:
 
 ```bash
-$ composer run --timeout=0 serve
+$ composer serve
 ```
 
-You can then browse to https://oauth2.loopback.world:8443.
+You can then browse to https://ezauth2.loopback.world:8443.
 
 > ### Linux users
 >
