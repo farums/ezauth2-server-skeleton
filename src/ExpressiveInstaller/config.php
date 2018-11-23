@@ -244,7 +244,7 @@ return [
 
         'template-engine' => [
             'question'       => 'Which template engine do you want to use?',
-            'default'        => 'n',
+            'default'        => '1',
             'required'       => false,
             'custom-package' => true,
             'options'        => [

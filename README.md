@@ -37,7 +37,7 @@ After choosing and installing the packages you want, go to the
 $ composer run --timeout=0 serve
 ```
 
-You can then browse to http://localhost:8080.
+You can then browse to https://oauth2.loopback.world:8443.
 
 > ### Linux users
 >
@@ -48,7 +48,7 @@ You can then browse to http://localhost:8080.
 > using the following command:
 >
 > ```bash
-> $ php -S 0.0.0.0:8080 -t public/ public/index.php
+> $ php public/index.php start
 > ```
 
 > ### Setting a timeout
