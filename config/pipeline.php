@@ -14,6 +14,7 @@ use Zend\Expressive\Router\Middleware\ImplicitOptionsMiddleware;
 use Zend\Expressive\Router\Middleware\MethodNotAllowedMiddleware;
 use Zend\Expressive\Router\Middleware\RouteMiddleware;
 use Zend\Stratigility\Middleware\ErrorHandler;
+use PSR7Sessions\Storageless\Http\SessionMiddleware;
 
 /**
  * Setup middleware pipeline:
