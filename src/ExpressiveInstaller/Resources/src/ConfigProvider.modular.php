@@ -37,6 +37,7 @@ class ConfigProvider
             ],
             'factories'  => [
                 Handler\HomePageHandler::class => Handler\HomePageHandlerFactory::class,
+                \EZAuth2\Middleware\OAuth2AuthorizationMiddleware::class => EZAuth2MiddlewareFactory::class,
             ],
         ];
     }
