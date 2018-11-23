@@ -50,8 +50,8 @@ class ConfigProvider
      */
     private function setTlsPaths()
     {
-        $this->publicCertPath = realpath('tls/certs/wild.loopback.world.cert');
-        $this->privateKeyPath = realpath('tls/private/wild.loopback.world.key');
+        $this->publicCertPath = realpath('tls/public.cert');
+        $this->privateKeyPath = realpath('tls/private.key');
 
         if (!file_exists($this->publicCertPath)) {
             throw new \Exception('Cannot find path for TLS (SSL) Certificate.');
