@@ -72,6 +72,7 @@ return [
             'packages' => [],
             'resources' => [
                 'Resources/src/ConfigProvider.flat.php' => 'src/App/ConfigProvider.php',
+                'Resources/src/EZAuth2MiddlewareFactory.php' => 'src/App/EZAuth2MiddlewareFactory.php',
             ],
         ],
         'modular' => [
@@ -79,6 +80,7 @@ return [
             ],
             'resources' => [
                 'Resources/src/ConfigProvider.modular.php' => 'src/App/src/ConfigProvider.php',
+                'Resources/src/EZAuth2MiddlewareFactory.php' => 'src/App/EZAuth2MiddlewareFactory.php',
             ],
         ],
     ],
