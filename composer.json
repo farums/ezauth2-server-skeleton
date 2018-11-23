@@ -1,10 +1,11 @@
 {
-    "name": "zendframework/zend-expressive-skeleton",
-    "description": "Zend expressive skeleton. Begin developing PSR-15 middleware applications in seconds!",
+    "name": "jstormes/ezauth2-server-skeleton",
+    "description": "Zend expressive OAuth2 skeleton. Begin developing OAuth2 enabled PSR-15 middleware applications in seconds!",
     "type": "project",
-    "homepage": "https://github.com/zendframework/zend-expressive-skeleton",
+    "homepage": "https://github.com/jstormes/ezauth2-server-skeleton",
     "license": "BSD-3-Clause",
     "keywords": [
+        "oauth2",
         "skeleton",
         "middleware",
         "psr",
@@ -33,11 +34,9 @@
         }
     },
     "support": {
-        "issues": "https://github.com/zendframework/zend-expressive-skeleton/issues",
-        "source": "https://github.com/zendframework/zend-expressive-skeleton",
-        "rss": "https://github.com/zendframework/zend-expressive-skeleton/releases.atom",
-        "slack": "https://zendframework-slack.herokuapp.com",
-        "forum": "https://discourse.zendframework.com/c/questions/expressive"
+        "issues": "https://github.com/jstormes/ezauth2-server-skeleton/issues",
+        "source": "https://github.com/jstormes/ezauth2-server-skeleton",
+        "rss": "https://github.com/jstormes/ezauth2-server-skeleton/releases.atom"
     },
   "repositories": [
     { "type": "vcs", "url": "https://github.com/jstormes/EZAuth2.git" }
