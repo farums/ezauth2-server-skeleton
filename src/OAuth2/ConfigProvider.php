@@ -22,6 +22,9 @@ class ConfigProvider
     /** @var string  */
     private $privateKeyPath;
 
+    /** @var string */
+    private $fullChainPath;
+
     /**
      * Returns the configuration array
      *
@@ -52,6 +55,7 @@ class ConfigProvider
     {
         $this->publicCertPath = realpath('tls/public.cert');
         $this->privateKeyPath = realpath('tls/private.key');
+        $this->fullChainPath = realpath('tls/fullchain.pem');
 
         if (!file_exists($this->publicCertPath)) {
             throw new \Exception('Cannot find path for TLS (SSL) Certificate.');
@@ -120,6 +124,8 @@ class ConfigProvider
                 'options' => [
                     'ssl_cert_file' => $this->publicCertPath,
                     'ssl_key_file' => $this->privateKeyPath,
+                    'ssl_client_cert_file' => $this->fullChainPath,
+                    'ssl_verify_depth' => 10,
                 ],
             ]
         ];
