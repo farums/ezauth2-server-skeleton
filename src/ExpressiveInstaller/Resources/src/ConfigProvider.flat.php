@@ -33,6 +33,7 @@ class ConfigProvider
     {
         return [
             'invokables' => [
+                Handler\HomePageRedirectHandler::class => Handler\HomePageRedirectHandler::class,
                 Handler\PingHandler::class => Handler\PingHandler::class,
             ],
             'factories'  => [

@@ -34,6 +34,7 @@ use Zend\Expressive\Router\Route;
  * );
  */
 return function (Application $app, MiddlewareFactory $factory, ContainerInterface $container) : void {
+    $app->get('/', App\Handler\HomePageRedirectHandler::class, 'home.redirect');
     $app->get('/app', App\Handler\HomePageHandler::class, 'home');
     $app->get('/api/ping', App\Handler\PingHandler::class, 'api.ping');
     $app->post('/oauth2', OAuth2\Handler\OAuth2Handler::class, 'oauth2');
