@@ -25,7 +25,9 @@ return [
                 // for most I/O operations:
                 'enable_coroutine' => true,
                 // Enable HTTP/2
-                'open_http2_protocol' => true,
+                // NOTE: HTTP/2 and EZAuth2 look to be incompatible at this time.
+                //   The code to pull the cert from the webserver cannot seem to talk to the Swoole when HTTP/2 is on.
+                //'open_http2_protocol' => true,
             ],
         ],
     ],
