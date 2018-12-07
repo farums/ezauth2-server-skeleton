@@ -23,7 +23,7 @@ return [
                 //'ssl_key_file' => 'tls/private/wild.loopback.world.key',
                 // Available in Swoole 4.1 and up; enables coroutine support
                 // for most I/O operations:
-                'enable_coroutine' => true,
+                //'enable_coroutine' => true,
                 // Enable HTTP/2
                 // NOTE: HTTP/2 and EZAuth2 look to be incompatible at this time.
                 //   The code to pull the cert from the webserver cannot seem to talk to the Swoole when HTTP/2 is on.
